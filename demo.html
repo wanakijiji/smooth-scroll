@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>スムーズスクロール</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<style>
+	html,
+	body,
+	.container {
+		height: 100%;
+	}
+	.container div {
+		color: #666;
+		background: linear-gradient(#FFB5B5, #FFF9B1, #A7FFA7, #92E5FF, #9FA4FF, #FFA4FB);
+		height: 1000%;
+		margin: 2rem auto;
+		position: relative;
+		border-radius: 5px;
+	}
+	h1 {
+	}
+	p {
+		padding: 4rem 0;
+		text-align: center;
+	}
+	.btn {
+		padding: 1rem 4rem;
+	}
+	#bottom {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+</style>
+<!--スムーズスクロール用　ここから-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="js/smooth-scroll.js"></script>
+<!--スムーズスクロール用　ここまで-->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+<div class="container">
+	<h1>スムーズスクロール</h1>
+	<div>
+		<p><a class="btn btn-default" href="#bottom"><span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span> ページ下部へ</a></p>
+		<p id="bottom"><a class="btn btn-default" href="#top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> ページ上部へ</a></p>
+	</div>
+</div>
+</body>
+</html>

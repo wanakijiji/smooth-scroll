@@ -34,6 +34,22 @@
 		left: 0;
 		width: 100%;
 	}
+	/* トップへ戻る固定ボタン */
+	.back-top {
+		position: fixed;
+		bottom: 3%;
+		right: 5%;
+	}
+	.back-top a {
+		display: inline-block;
+		font-size: 40px;
+		background-color: #fff;
+		width: 70px;
+		height: 70px;
+		line-height: 70px;
+		border-radius: 100%;
+		box-shadow: 3px 3px 3px rgba(0,0,0,.3);
+	}
 </style>
 <!--スムーズスクロール用　ここから-->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
@@ -50,5 +66,8 @@
 		<p id="bottom"><a class="btn btn-default" href="#top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span> ページ上部へ</a></p>
 	</div>
 </div>
+<!-- 固定ボタン ここから -->
+<p class="back-top scroll-fade"><a href="#top"><span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span></a></p>
+<!-- 固定ボタン ここまで -->
 </body>
 </html>

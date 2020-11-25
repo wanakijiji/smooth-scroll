@@ -4,15 +4,16 @@
 	'use strict';
 
 	$(function() { 
-		var scrollSpeed = 1000, // スクロール時間（ミリ秒）
-				buttonOffset = 200; // トップへ戻る固定ボタンを表示するスクロール量（px）
+		var scrollSpeed = 1000; // スクロール時間（ミリ秒）
+		var buttonOffset = 200; // トップへ戻る固定ボタンを表示するスクロール量（px）
+		var scrollPadding = 0; // スクロール時の上部padding（px）
 	
 		// スムーズスクロール
 		$('a[href^="#"]').on( 'click', function() {
 			var href= $(this).attr( 'href' );
 			if ( href !== '#' || href !== '' ) {
 				var target = ( href === '#top' && !$('#top').length ) ? 'html' : href,
-						position = $(target).offset().top;
+						position = $(target).offset().top - scrollPadding;
 				$('body, html').animate( {scrollTop:position}, scrollSpeed, 'swing' );
 				return false;
 			}

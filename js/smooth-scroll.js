@@ -10,7 +10,7 @@
     // トップへ戻るボタン設定
     const buttonOffset = 200; // トップへ戻る固定ボタンを表示するスクロール量（px）
 	
-		// スムーズスクロール
+    // スムーズスクロール
     $('a[href^="#"]').on('click', function() {
       const href= $(this).attr('href');
       const headerHeight = (fixedHeaderOffset) ? $('header').outerHeight() : 0;

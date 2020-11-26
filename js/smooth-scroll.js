@@ -1,7 +1,6 @@
 // JavaScript Document
 
 (function($) {
-
 	$(function() {
     
     // スムーズスクロール設定
@@ -34,7 +33,7 @@
           sfBtn.stop().fadeOut();
         }
       });
-    }
+		}
+		
 	});
-
 })(jQuery);

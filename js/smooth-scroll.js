@@ -1,14 +1,14 @@
 // JavaScript Document
 
 (function($) {
-	$(function() {
+  $(function() {
     
     // スムーズスクロール設定
     const scrollSpeed = 1000; // スクロール時間（ミリ秒）
     const fixedHeaderOffset = false; // 固定ヘッダー用スクロール量調整ON/OFF（true/false）
     const additionalOffset = 0; // スクロール量調整（px）
     // トップへ戻るボタン設定
-    const	buttonOffset = 200; // トップへ戻る固定ボタンを表示するスクロール量（px）
+    const buttonOffset = 200; // トップへ戻る固定ボタンを表示するスクロール量（px）
 	
 		// スムーズスクロール
     $('a[href^="#"]').on('click', function() {
@@ -16,7 +16,7 @@
       const headerHeight = (fixedHeaderOffset) ? $('header').outerHeight() : 0;
       if (href !== '#' || href !== '') {
         const target = (href === '#top' && ! $('#top').length) ? 'html' : href;
-        const	position = $(target).offset().top - headerHeight - additionalOffset;
+        const position = $(target).offset().top - headerHeight - additionalOffset;
         $('body, html').animate({scrollTop: position}, scrollSpeed, 'swing');
         return false;
       }
@@ -33,7 +33,7 @@
           sfBtn.stop().fadeOut();
         }
       });
-		}
+    }
 		
-	});
+  });
 })(jQuery);

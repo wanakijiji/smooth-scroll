@@ -1,0 +1,66 @@
+@charset "UTF-8";
+/* CSS Document */
+
+html,
+body,
+.container {
+	height: 100%;
+}
+html {
+	font-size: 10px;
+}
+body {
+	font-family: Verdana, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+	text-align: center;
+}
+header {
+	padding: 3rem;
+}
+h1 {
+}
+#main {
+	color: #666;
+	background: linear-gradient(#FFB5B5, #FFF9B1, #A7FFA7, #92E5FF, #9FA4FF, #FFA4FB);
+	height: 1000%;
+	margin: 2rem auto;
+	position: relative;
+	border-radius: 5px;
+}
+#main p {
+	padding: 4rem 0;
+	text-align: center;
+}
+.btn {
+	padding: 1rem 4rem;
+}
+.btn .fas {
+	font-size: 2rem;
+  margin-right: .5rem;
+	color: #FFF;
+}
+#bottom {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+}
+footer {
+	padding: 3rem;
+}
+
+/* トップへ戻る固定ボタン */
+.back-top {
+	position: fixed;
+	bottom: 3%;
+	right: 5%;
+}
+.back-top i {
+	font-size: 40px;
+	background-color: #17a2b8;
+  color: #FFF;
+	width: 70px;
+	height: 70px;
+	line-height: 70px;
+	border-radius: 100%;
+	box-shadow: 3px 3px 3px rgba(0,0,0,.3);
+}

@@ -18,17 +18,15 @@ jQuery plugin to scroll smoothly.
 
 ## Features
 
-- **Switch image on hover:**  
-  Switch the image on hover for an suffixed image.  
-  ex: 'image.png' to 'image-active.png'  
+- **Smooth scrolling to in-page links:**  
+  Scrolls smoothly to links within the page  
 
-- **Switch image if link url is page itself:**  
-  If the parent link of the image is a link to own page, the image will always display the "-active" image.
+- **Display of 'back to top' button:**  
+  Display the "Return to Top" button after scrolling.
   
   
-- **マウスオーバーによる画像切り替え:**  
-  マウスオーバー時に指定の添え字（-active）を付けた画像に切り替わります。  
-  例：「image.png」→「image-active.png」
+- **ページ内リンクへのスムーズなスクロール移動:**  
+  ページ内リンクへスムーズにスクロールします。  
   
-- **自身のページへのリンク画像を切り替える:**    
-  画像を囲むリンクが自身のページへのリンクの場合、常に「-active」の画像を表示します。
+- **「トップへ戻る」ボタンの表示:**    
+  スクロール後に「トップへ戻る」ボタンを表示します。
